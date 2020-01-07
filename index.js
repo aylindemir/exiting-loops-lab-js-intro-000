@@ -1,8 +1,6 @@
-function breakOut(array, changeValue, stopValue){
-  for(let i =0;array.length;i++){
-    // if(array[i] !== stopValue){
-        array[i]= changeValue
-    // }
-  }
-  return array
+breakOut(array, changeValue, stopValue){
+  array.some(it=>
+if(it==stopValue){ break;}
+it = changeValue;
+  )
 }
